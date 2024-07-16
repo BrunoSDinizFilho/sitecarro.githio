@@ -1,0 +1,70 @@
+<!DOCTYPE html> <!-- VERSÃO DO HTML -->
+<html lang="pt-br"> <!-- TAG HTML E LINGUA DO SITE -->
+
+<head> <!-- CONFIGURAÇÕES DO SITE -->
+    <meta charset="UTF-8"> <!-- PADRÃO DE CARACTERES DO SITE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SITE COMPATÍVEL COM CELULAR E COMPUTADOR -->
+    <link rel="stylesheet" href="styles.css"> <!-- IMPORTANDO MEU ARQUIVO CSS -->
+    <title>DevClub - Tesla</title> <!-- TITULO DO SITE -->
+</head>
+
+<body>
+    <img src="./Img/MATERIAL DE APOIO/logo.png" alt="logo da tesla" class="logo">
+
+    <ul class="lista">
+        <!-- ITEM 1 -->
+        <li class="item">
+            <video src="./Img/MATERIAL DE APOIO/tesla.mp4" muted loop autoplay></video>
+
+            <div class="info-carro">
+                <h1>Model Y</h1> <!-- TITULO -->
+                <p class="sub-titulo">Parcelar a partir de 499 dólares</p>
+            </div>
+
+            <div class="rodape">
+                <button onclick="aparecerFormulario()">Contato</button>
+                <button class="test-drive">Faça um Test-Drive</button>
+                <p class="texto-rodape">Consultar estoque*</p>
+            </div>
+        </li>
+
+        <!-- ITEM 2 -->
+        <li class="item">
+            <img src="./Img/MATERIAL DE APOIO/model-3.png" class="img-tesla" alt="imagem model 3">
+
+            <div class="info-carro">
+                <h1>Model 3</h1> <!-- TITULO -->
+                <p class="sub-titulo">Compre agora o seu Tesla</p>
+            </div>
+        </li>
+
+        <!-- ITEM 3 -->
+        <li class="item">
+            <img src="./Img/MATERIAL DE APOIO/model-x.png" class="img-tesla" alt="imagem model x">
+
+            <div class="info-carro">
+                <h1>Model X</h1> <!-- TITULO -->
+                <p class="sub-titulo">Parcelar a partir de 499 dólares</p>
+            </div>
+        </li>
+    </ul>
+
+    <!-- FORMULÁRIO -->
+    <div id="formulario-compra" class="form-container">
+        <form id="compra-form" onsubmit="return validarFormulario()">
+            <h2>Contato</h2>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="telefone">Número de Celular:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
